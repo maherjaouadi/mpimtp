@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=H, initial-scale=1.0" /> -->
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="montext">Calculette Big data</h1>
+    <input type="text" id="oper1" name="oper1" /><br /><br />
+    <input type="text" id="oper2" name="oper2" /><br /><br />
+    <button
+      type="button"
+      onclick="document.getElementById('montext').innerHTML=somme(parsefloat(document.getElementById('oper1').value),parsefloat(document.getElementById('oper2').value))"
+    >
+      +
+    </button>
+
+    <button
+      type="button"
+      onclick="document.getElementById('montext').innerHTML=somme(10,3)"
+    >
+      -
+    </button>
+    <button
+      type="button"
+      onclick="document.getElementById('montext').innerHTML=somme(10,3)"
+    >x
+    </button>
+    <button
+      type="button"
+      onclick="document.getElementById('result').value=
+    >
+      /
+    </button>
+
+    <br /><br />
+
+    <input type="text" id="result" name="reuslt" /><br /><br />
+    <script src="index.js"></script>
+  </body>
+</html>
